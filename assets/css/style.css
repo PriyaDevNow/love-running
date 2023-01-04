@@ -70,7 +70,7 @@ h2 {
 
 #cover-text,
 #cover-text h2 {
-    color: #fff
+    color: #fff;
 }
 
 #hero-image {
@@ -122,7 +122,7 @@ h2 {
 hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
-    margin: 5px 0
+    margin: 5px 0;
 }
 
 #left-about {
@@ -206,7 +206,7 @@ right-about-heading p {
     width: 20%;
     height: 300px;
     float: left;
-    padding: 30px o o 10px;
+    padding: 30px 0 0 10px;
     text-align: center;
     border: 2px solid white;
     box-sizing: border-box;
@@ -248,5 +248,39 @@ footer {
 
 #photos > img {
     width:100%;
+}
 
+/* media query */
+
+/* For larger and medium screen sizes from 1200px wide and down */
+
+@media screen and (max-width:1200px) {
+#club-ethos {
+    width: 65%;
+    height: 1200px;
+    margin: 0 auto;
+}
+
+#welcome {
+    padding: 30px 0;
+    margin: 0;
+}
+
+#left-about, #right-about {
+    width:100%;
+    float: left;
+    padding: 0;
+}
+
+#center-about {
+    clear:both;
+    width:100%;
+    float:left;
+    padding:0;
+
+}
+
+hr {
+    display:none;
+}
 }
