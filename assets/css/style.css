@@ -285,7 +285,8 @@ hr {
 }
 }
 /* for medium screen sizes from 950px and down */
-@media  screen and {max-width: 950px;
+@media screen and (max-width:950px)
+{
     #menu{
         clear:left;
         float:left; 
@@ -293,5 +294,7 @@ hr {
         margin-bottom: 20px;
         line-height: 25px;
     }
-    
+    #cover-text {
+        left:0;
+    } 
 }
