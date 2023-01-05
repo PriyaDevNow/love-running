@@ -59,7 +59,7 @@ h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image */
+/* hero image and cover text*/
 
 #hero-outer {
     height: 600px;
@@ -78,7 +78,7 @@ h2 {
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
 
-    /* animates zoom effect on landing page */
+    /* animates zoom effect on loading page */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -114,16 +114,11 @@ h2 {
     position: absolute;
 }
 
-/* club-ethos */
+/* club ethos */
 #club-ethos {
     height: 600px;
 }
 
-hr {
-    border-top: 1px solid #3a3a3a;
-    width: 100%;
-    margin: 5px 0;
-}
 
 #left-about {
     padding-top: 30px;
@@ -142,6 +137,12 @@ hr {
     margin: 0 auto;
 }
 
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+.
 .left-about-heading {
     width: 60%;
     float: right;
@@ -226,7 +227,7 @@ footer {
     text-align: center;
 }
 
-.social-networks>li {
+.social-networks > li {
     display: inline;
 }
 
@@ -247,12 +248,12 @@ footer {
 }
 
 #photos > img {
-    width:100%;
+    width: 100%;
 }
 
-/* media query */
+/* Media queries */
 
-/* For larger and medium screen sizes from 1200px wide and down */
+/* For larger to medium screen sizes from 1200px wide and down */
 
 @media screen and (max-width:1200px) {
 #club-ethos {
@@ -267,17 +268,16 @@ footer {
 }
 
 #left-about, #right-about {
-    width:100%;
+    width: 100%;
     float: left;
     padding: 0;
 }
 
 #center-about {
-    clear:both;
-    width:100%;
-    float:left;
-    padding:0;
-
+    clear: both;
+    width: 100%;
+    float: left;
+    padding: 0;
 }
 
 hr {
@@ -288,13 +288,33 @@ hr {
 @media screen and (max-width:950px)
 {
     #menu{
-        clear:left;
-        float:left; 
+        clear: left;
+        float: left; 
         margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
     }
     #cover-text {
-        left:0;
+        left: 0;
     } 
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+
+    }
+
+    .left-about-heading, .right-about-heading {
+        width:inherit;
+    }
+.left-about-heading h2, .right-about-heading h2 {
+    width:100%;
+    text-align: center;
+}
+
+.left-about-heading p, .right-about-heading p {
+    text-align: center;
+    padding: 0 20px;
+}
 }
